@@ -1,5 +1,6 @@
 package com.example.sda.retrofitapp.di;
 
+import com.example.sda.retrofitapp.ui.contacts.ContactsFragment;
 import com.example.sda.retrofitapp.ui.login.LoginActivity;
 import com.example.sda.retrofitapp.ui.main.MainActivity;
 
@@ -16,4 +17,6 @@ public interface AppComponent {
     void inject(LoginActivity loginActivity);
 
     void inject(MainActivity mainActivity);
+
+    void inject(ContactsFragment contactsFragment);
 }

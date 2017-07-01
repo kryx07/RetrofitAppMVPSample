@@ -23,6 +23,13 @@
         android:layout_below="@id/getCalls"
         android:text="Contacts" />
 
+    <Button
+        android:id="@+id/getContactsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getContacts"
+        android:text="Contacts Fragment" />
+
     <ProgressBar
         android:id="@+id/clients_progress_bar"
         android:layout_width="wrap_content"
@@ -32,7 +39,15 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/clients_recycler"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:id="@+id/contacts_fragment"
+        android:name="com.example.sda.retrofitapp.ui.contacts.ContactsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clients_recycler"
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>

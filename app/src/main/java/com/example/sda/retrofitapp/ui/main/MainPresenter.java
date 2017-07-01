@@ -1,8 +1,5 @@
 package com.example.sda.retrofitapp.ui.main;
 
-import android.widget.Toast;
-
-import com.example.sda.retrofitapp.R;
 import com.example.sda.retrofitapp.model.CallActivity;
 import com.example.sda.retrofitapp.model.Client;
 import com.example.sda.retrofitapp.model.Contact;
@@ -10,7 +7,6 @@ import com.example.sda.retrofitapp.network.ApiClient;
 import com.example.sda.retrofitapp.ui.calls.CallsAdapter;
 import com.example.sda.retrofitapp.ui.clients.ClientsAdapter;
 import com.example.sda.retrofitapp.ui.contacts.RealmContactAdapter;
-import com.example.sda.retrofitapp.ui.login.LoginMvpView;
 import com.example.sda.retrofitapp.utlis.PrefsManager;
 
 import java.util.List;
@@ -21,10 +17,6 @@ import io.realm.Realm;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
-/**
- * Created by sda on 26.06.17.
- */
 
 public class MainPresenter {
 

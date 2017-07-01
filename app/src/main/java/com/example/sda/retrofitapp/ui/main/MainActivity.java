@@ -15,31 +15,20 @@ import android.widget.Toast;
 
 import com.example.sda.retrofitapp.App;
 import com.example.sda.retrofitapp.R;
-import com.example.sda.retrofitapp.model.CallActivity;
 import com.example.sda.retrofitapp.model.Client;
 import com.example.sda.retrofitapp.model.Contact;
-import com.example.sda.retrofitapp.network.ApiClient;
 import com.example.sda.retrofitapp.ui.calls.CallsAdapter;
 import com.example.sda.retrofitapp.ui.clients.ClientDetailsActivity;
 import com.example.sda.retrofitapp.ui.clients.ClientsAdapter;
-import com.example.sda.retrofitapp.ui.contacts.ContactAdapter;
 import com.example.sda.retrofitapp.ui.contacts.RealmContactAdapter;
-import com.example.sda.retrofitapp.utlis.PrefsManager;
-
-import java.util.List;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import io.realm.Case;
 import io.realm.Realm;
-import io.realm.RealmObject;
 import io.realm.RealmResults;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 /**
  * Created by sda on 25.05.17.

@@ -1,5 +1,16 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 apply plugin: 'realm-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+
+
+kapt {
+    correctErrorTypes = true
+    generateStubs = true
+}
+
 
 android {
     compileSdkVersion 25
@@ -36,8 +47,12 @@ dependencies {
     compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
 
     // Butterknife
-    compile 'com.jakewharton:butterknife:8.6.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    //compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife_version"
+    kapt "com.jakewharton:butterknife:$butterknife_version"
+
+    compile "com.jakewharton:butterknife:$butterknife_version"
+    kapt "com.jakewharton:butterknife-compiler:$butterknife_version"
 
     // RecyclerView
     compile 'com.android.support:recyclerview-v7:25.3.1'
@@ -47,6 +62,17 @@ dependencies {
 
     // Dagger
     compile "com.google.dagger:dagger:2.9"
+    kapt 'com.google.dagger:dagger-compiler:2.9'
+    provided 'org.glassfish:javax.annotation:10.0-b28'
     annotationProcessor "com.google.dagger:dagger-compiler:2.9"
     provided 'javax.annotation:jsr250-api:1.0'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+
+}
+repositories {
+    mavenCentral()
 }

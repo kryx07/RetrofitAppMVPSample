@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
  * Created by sda on 24.06.17.
  */
 
-public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactHolder> {
+public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ContactHolder> {
 
     private List<Contact> contactList = new ArrayList<>();
 
